@@ -1,0 +1,11 @@
+a=int(input("enter your date of birth"))
+b=int(input("enter your month of birth"))
+c=int(input("enter your year of birth"))
+import datetime
+ob=datetime.datetime.now()
+print("-"*25)
+print("1 week ago was it:",ob-datetime.timedelta(weeks=1))
+print("100 days ago was it:", ob-datetime.timedelta(days=100))
+print("1000days ago it will be:", ob+datetime.timedelta(days=1000))
+bday=datetime.datetime(a,b,c)
+print("Birthday in....",ob-bday)
